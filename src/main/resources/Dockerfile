@@ -1,0 +1,1 @@
+# dockerfile for influx and grafana combined with log sourcing
