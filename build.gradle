@@ -15,7 +15,7 @@ dependencies {
 
     compile group: 'org.mapdb', name: 'mapdb', version: '3.0.8'
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
-
+    compile group: 'com.influxdb', name: 'influxdb-client-java', version: '1.7.0'
 }
 
 test {
