@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class LogSourcingTests {
+package com.logsourcing.tests;
+
+public class LogSourcingTests {
 }
