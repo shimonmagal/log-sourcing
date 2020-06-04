@@ -1,2 +1,4 @@
-package com.logsourcing;public class InfluxClient {
+package com.logsourcing;
+
+public class InfluxClient {
 }
