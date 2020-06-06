@@ -12,3 +12,4 @@ This also generates a list of ERRORS and WARNINGS you have in your system, so it
 
 TODO:
 Dockerfile
+This project is not working yet
