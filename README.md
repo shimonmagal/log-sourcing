@@ -11,4 +11,4 @@ This way you can just extrac the pattern of the log message, and then store that
 This also generates a list of ERRORS and WARNINGS you have in your system, so it acts as a technical debt list or a bank of tasks to put and resolve in your backlog.
 
 TODO:
-DOcketfile
+Dockerfile
