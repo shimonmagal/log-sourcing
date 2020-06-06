@@ -9,3 +9,6 @@ However, what we can try to do instead is to deduplicate logs that are similar (
 This way you can just extrac the pattern of the log message, and then store that with its point time and other tags - like server it originated in, giving your much powerful stats and with a fraction of the storage space
 
 This also generates a list of ERRORS and WARNINGS you have in your system, so it acts as a technical debt list or a bank of tasks to put and resolve in your backlog.
+
+TODO:
+DOcketfile
