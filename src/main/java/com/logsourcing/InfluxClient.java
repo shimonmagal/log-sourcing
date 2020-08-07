@@ -1,14 +1,26 @@
 package com.logsourcing;
 
 import com.influxdb.client.InfluxDBClient;
-import com.influxdb.client.internal.InfluxDBClientImpl;
+import com.influxdb.client.InfluxDBClientFactory;
+import com.influxdb.client.domain.WritePrecision;
+import com.influxdb.client.write.Point;
 
 public class InfluxClient {
-    private final InfluxDBClient influx;
+    private final InfluxDBClient influxDBClient;
 
     public InfluxClient()
     {
-        this.influx = new InfluxDBClientImpl(d);
-        this.influx = new Infl
+        this.influxDBClient = InfluxDBClientFactory.create("http://localhost:8086");
+    }
+
+    public void writeLine(LogLine line)
+    {
+        Point p = Point.measurement("ERRORS");
+
+        p.addTag("SEVERITY", line.severity.name());
+        p.time(line.time, WritePrecision.MS);
+        p.addTag("PATTERN", line.messagePattern);
+
+        influxDBClient.getWriteApi().writePoint(p);
     }
 }
